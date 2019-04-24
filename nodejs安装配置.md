@@ -36,3 +36,38 @@
     # 如果全局安装pm2包，可以验证
     pm2 list
    ```
+5. npm 设置代理 参考原文链接[https://medium.com/@jamesjefferyuk/how-to-use-npm-behind-a-socks-proxy-c81d6f51dff8](https://medium.com/@jamesjefferyuk/how-to-use-npm-behind-a-socks-proxy-c81d6f51dff8) 
+   
+   1. install polipo 
+        In this guide I will show you how to turn your SOCKS proxy into a HTTP proxy to use npm. This has been tested on Ubuntu Xenial Xerus but should work fine on other Linux distributions.
+        ```
+        大概翻译了下就是把 socks5 代理转成http代理。(自己测试直接设置socks代理是没用)
+        ```
+
+
+        ```bash
+        sudo apt-get install polipo
+        ```
+
+    2. edit config:    vim /etc/polipo/config and add the following lines:
+
+        ```bash
+        socksParentProxy = “127.0.0.1:1337”
+        socksProxyType = socks5
+        proxyAddress = “::0”
+        proxyPort = 8123
+        ```
+
+    3. restart polipo
+        ```bash
+        sudo service polipo restart
+        ```
+
+    4. 保证 socks5 proxy 已经启动，后续补充
+
+    5. 设置npm config
+        ```bash
+        npm config set proxy http://127.0.0.1:8123
+        npm config set https-proxy http://127.0.0.1:8123
+        ```
+
