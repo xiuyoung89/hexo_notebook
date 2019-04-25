@@ -7,3 +7,9 @@
 
 2. 查看程序异常关闭的原因
    2.1 内存溢出导致的异常关闭： dmesg | egrep -i -B100 ‘killed process’ 
+
+3. 命令行临时代理设置
+   ```bash
+    export https_proxy="socks5://127.0.0.1:1080"
+    export http_proxy="socks5://127.0.0.1:1080"
+   ``` 
