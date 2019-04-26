@@ -13,3 +13,11 @@
     export https_proxy="socks5://127.0.0.1:1080"
     export http_proxy="socks5://127.0.0.1:1080"
    ``` 
+4. 清理登陆信息
+   ```bash
+    echo > /var/log/wtmp
+    echo > /var/log/btmp
+    echo > /var/log/lastlog
+    history -c
+
+   ```
