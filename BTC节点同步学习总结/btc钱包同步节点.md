@@ -6,6 +6,7 @@ txindex=1
 
 # rpcthread 
 rpcthreads=64
+dbcache=6000        # MB
 
 server=1
 rpcuser=user
