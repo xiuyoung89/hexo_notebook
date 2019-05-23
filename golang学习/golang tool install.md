@@ -6,14 +6,20 @@ author: "xiuyoung"
 
 # 安装golang
 
+1. 直接安装
+
 ```bash
+    sudo aapt-get update
     sudo apt-get install golang
 ```
+
+2. 手动安装
+    [下载地址]()
 
 # 配置环境
 
 ```bash
-#已经配置好的环境
+# 已经配置好的环境
 go env
 # GOARCH="amd64"
 # GOBIN="/home/wangy/work/goproject/bin"
