@@ -5,7 +5,7 @@ testnet=1
 txindex=1
 
 # rpcthread 
-rpcthreads=64
+rpcthreads=64       # 线程数量
 dbcache=6000        # MB
 
 server=1

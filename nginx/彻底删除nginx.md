@@ -7,7 +7,7 @@
     sudo apt-get autoremove 
     dpkg --get-selections|grep nginx 
 
-    # 罗列除与nginx相关的软件
+    # 罗列出与nginx相关的软件
     nginx-common deinstall 
 
     # 然后
