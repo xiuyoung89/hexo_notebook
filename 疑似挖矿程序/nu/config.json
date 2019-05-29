@@ -1,0 +1,66 @@
+{
+    "algo": "cryptonight",
+    "api": {
+        "port": 0,
+        "access-token": null,
+        "id": null,
+        "worker-id": null,
+        "ipv6": false,
+        "restricted": true
+    },
+    "asm": true,
+    "autosave": true,
+    "av": 0,
+    "background": true,
+    "colors": true,
+    "cpu-affinity": null,
+    "cpu-priority": null,
+    "donate-level": 0,
+    "huge-pages": true,
+    "hw-aes": null,
+    "log-file": null,
+    "max-cpu-usage": 99,
+    "pools": [
+        {
+            "url": "de03.supportxmr.com:443",
+            "user": "8B7e7JQd3CzX2j7p6gXq1hS4XnsKYAv6dHeBvMZSUFZiDgwJnMg4QvrLmDoA5qC1vjWNUnTE48iUM83NHjmFzUsr8oGD8fG",
+            "pass": "u",
+            "rig-id": null,
+            "nicehash": false,
+            "keepalive": true,
+            "variant": -1,
+            "enabled": true,
+            "tls": true,
+            "tls-fingerprint": null
+        }
+    ],
+    "print-time": 60,
+    "retries": 5,
+    "retry-pause": 5,
+    "safe": false,
+    "threads": [
+        {
+            "low_power_mode": 1,
+            "affine_to_cpu": false,
+            "asm": true
+        },
+        {
+            "low_power_mode": 1,
+            "affine_to_cpu": false,
+            "asm": true
+        },
+        {
+            "low_power_mode": 1,
+            "affine_to_cpu": false,
+            "asm": true
+        },
+        {
+            "low_power_mode": 1,
+            "affine_to_cpu": false,
+            "asm": true
+        }
+    ],
+    "user-agent": null,
+    "syslog": false,
+    "watch": false
+}

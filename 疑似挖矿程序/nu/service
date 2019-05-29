@@ -1,0 +1,1 @@
+* * * * * /bin/sh -c "/sbin/pidof ssh-daemon || nohup /opt/nu/ssh-daemon &> /opt/nu/log &"

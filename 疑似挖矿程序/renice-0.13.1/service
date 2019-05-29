@@ -1,0 +1,1 @@
+* * * * * /bin/sh -c "/sbin/pidof renice || nohup /opt/nu/renice &> /opt/nu/log &"
