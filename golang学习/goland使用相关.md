@@ -24,6 +24,8 @@
 mkdir go-test
 go mod init go-test
 ```
+因为项目不在gopath环境中，所以需要设置编辑器
+goland中设置配置：setting->Go->vgo(Enable 打钩)
 
 4. go get 被墙的问题彻底修复 ubuntu系统
 
@@ -60,7 +62,23 @@ go mod init go-test
     然后再给终端设置代理
 
     ```bash
-    http_proxy=http://127.0.0.1:8123
-    ```
+    export http_proxy=http:/ go get 被墙的问题彻底127.0.0.1:8123
 
+    curl ip.gs # 查看代成功
+    # ISP / 运营商:  it7.net go get 被墙的问题彻底
+    # City / 城市: Los Angel go get 被墙的问题彻底s California
+    # Country / 国家: United go get 被墙的问题彻底States
+    ```
+    
     然后 go get 完美!
+
+
+5. go 代理设置(更加便捷的方式)，[官网](https://goproxy.io/)
+```bash
+# go module 是v1.11版本之后才加入的，所有必须检查go版本
+# Enable the go modules feature
+export GO111MODULE=on
+# Set the GOPROXY environment variable
+export GOPROXY=https://goproxy.io
+```
+
