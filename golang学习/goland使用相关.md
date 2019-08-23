@@ -65,9 +65,9 @@ goland中设置配置：setting->Go->vgo(Enable 打钩)
     export http_proxy=http://127.0.0.1:8123
 
     curl ip.gs # 查看代成功
-    # ISP / 运营商:  it7.net go get 被墙的问题彻底
-    # City / 城市: Los Angel go get 被墙的问题彻底s California
-    # Country / 国家: United go get 被墙的问题彻底States
+    # ISP / 运营商:  it7.net
+    # City / 城市: Los Angels California
+    # Country / 国家: United States
     ```
     
     然后 go get 完美!
