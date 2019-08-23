@@ -9,7 +9,7 @@ author: "xiuyoung"
 1. 直接安装
 
 ```bash
-    sudo aapt-get update
+    sudo apt-get update
     sudo apt-get install golang
 ```
 

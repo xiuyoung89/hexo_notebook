@@ -41,7 +41,7 @@ goland中设置配置：setting->Go->vgo(Enable 打钩)
     方案一：把shadowsocks-qt5客户端的本地代理协议全部改成http协议；（因为自己本地git的配置还有浏览器的代理协议都设置的socks协议，所以这种方案对我来说不可行，那么寻找方案二了）
     方案二：给系统设置http代理，并把http转发给socks5(为什么这样做？ 我的理解：我的代理客户端现在设置的代理协议是socks5,端口是1080，就是所有的代理最终都是这个端口转发。上边设置all_proxy让终端走了代理，漏了http协议的处理，所以我现在给所有http的协议转成socks5协议，这时候需要使用 polimo工具了)
     ```bash
-    sudo apt-get install polimo
+    sudo apt-get install polipo
 
     vim /etc/polipo/config # 文件不存在新建
 
@@ -62,7 +62,7 @@ goland中设置配置：setting->Go->vgo(Enable 打钩)
     然后再给终端设置代理
 
     ```bash
-    export http_proxy=http:/ go get 被墙的问题彻底127.0.0.1:8123
+    export http_proxy=http://127.0.0.1:8123
 
     curl ip.gs # 查看代成功
     # ISP / 运营商:  it7.net go get 被墙的问题彻底

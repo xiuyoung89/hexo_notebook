@@ -6,14 +6,17 @@ txindex=1
 
 # rpcthread 
 rpcthreads=64       # 线程数量
-dbcache=6000        # MB
+dbcache=3000        # MB
 
 server=1
+datadir=/home/ubuntu/btc-testnet-node
 rpcuser=user
-rpcpassword=pass
-rpcport=8332
-rpcallowip=127.0.0.1
+rpcpassword=password
+rpcport=18545
+rpcallowip=0.0.0.0/0
 ```
 
 
 重新解析btc数据库
+
+export http_proxy=http://192.168.0.141:8123
