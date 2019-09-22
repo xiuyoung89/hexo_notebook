@@ -15,7 +15,7 @@ usa.51ssr.club
 混淆插件tls1.2_ticket_auth
 
 
-# ssr config
+## ssr work config
 
 ```bash
 {
@@ -46,4 +46,33 @@ usa.51ssr.club
 
 ```
 
-CZFC5F7ER5CG
+## myvpn 
+
+```bash
+// self vpn server 
+{
+    "server": "67.218.141.175",
+    "server_ipv6": "::",
+    "server_port": 1856,
+    "local_address": "127.0.0.1",
+    "local_port": 1080,
+
+    "password": "www.eosdroping.com",
+    "method": "aes-256-cfb",
+    "protocol": "origin",
+    "protocol_param": "",
+    "obfs": "plain",
+    "obfs_param": "",
+    "speed_limit_per_con": 0,
+    "speed_limit_per_user": 0,
+
+    "additional_ports" : {}, // only works under multi-user mode
+    "additional_ports_only" : false, // only works under multi-user mode
+    "timeout": 120,
+    "udp_timeout": 60,
+    "dns_ipv6": false,
+    "connect_verbose_info": 0,
+    "redirect": "",
+    "fast_open": false
+}
+```
