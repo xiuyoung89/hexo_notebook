@@ -26,7 +26,7 @@ Resolving deltas: 100% (3799/3799), done.
 
 [root@localhost ~]# ssr config 		# 配置文件路径 /usr/local/share/shadowsocksr/config.json
 {
-    "server": "0..0.0.0",	// ssr服务器ip
+    "server": "0.0.0.0",	// ssr服务器ip
     "server_ipv6": "::",
     "server_port": 8080,	// ssr服务器端口
     "local_address": "127.0.0.1",
