@@ -82,3 +82,9 @@ export GO111MODULE=on
 export GOPROXY=https://goproxy.io
 ```
 
+
+## v1.13 设置代理
+```bash
+go env -w GOPROXY=https://goproxy.cn,direct
+```
+
