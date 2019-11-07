@@ -212,10 +212,9 @@ curl -X POST http://127.0.0.1:8888/v1/producer/schedule_protocol_feature_activat
 ./cleos set contract eosio.token /home/young/mnt/work/git/eosio.contracts/build/contracts/eosio.token
 
 # msig contract 
-./cleos set contract eosio.msig  /home/young/mnt/work/git/eosio.contracts/build/contracts/eosio.msig/
+./cleos set contract eosio.msig  /home/young/mnt/work/git/eosio.contracts/build/contracts/eosio.msig
 
 ./cleos push action eosio.token create '["eosio", "27000000000.0000 BYS",0,0,0]' -p eosio.token
-
 ./cleos push action eosio.token issue '["eosio", "27000000000.0000 BYS", "issue"]' -p eosio
 
 
@@ -232,7 +231,7 @@ curl -X POST http://127.0.0.1:8888/v1/producer/schedule_protocol_feature_activat
 
 ```bash
 # bysnode1
-./cleos system newaccount  eosio bysnode1 EOS8QG34GR99U6WYCmYVtFYxHLEG1k8d11GaphGyd2f4pqr2BAbgw --stake-net "1000 BYS" --stake-cpu "1000 BYS" --buy-ram "1000 BYS"   
+./cleos system newaccount --transfer  eosio bysnode1 EOS8QG34GR99U6WYCmYVtFYxHLEG1k8d11GaphGyd2f4pqr2BAbgw --stake-net "1000 BYS" --stake-cpu "1000 BYS" --buy-ram "1000 BYS"   
 
 #bysnode2
 ./cleos  system newaccount --transfer eosio bysnode2 EOS8ZEQsSK5tBHNFPUspgsBVpsk4Ad7QPonrL1ho7RAoVSGXwCJLp --stake-net "1000 BYS" --stake-cpu "1000 BYS" --buy-ram "1000 BYS" 
@@ -335,4 +334,10 @@ cleos -u http://172.18.0.1:8888 system undelegatebw user2  user2 '0.02 SYS' '0.0
 
 ```bash
 cleos push action eosio refund '["本人账户名"]' -p 本人账户名
+```
+
+查询出块顺序
+
+```bash
+http://127.0.0.1:8888/v1/chain/get_producer_schedule
 ```
