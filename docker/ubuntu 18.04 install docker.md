@@ -1,3 +1,8 @@
+<!--
+ * @title: Do not edit
+ * @date: YYYY-MM-DD HH:mm:ss
+ * @author: Young
+ -->
 ---
     title:  "ubuntu 18.04 install docker"
     date:   2019-05-20
@@ -76,4 +81,14 @@
 
 
 可以直接下载deb安装，可参考官方文档,可以直接跳转下载对应的安装包。[跳转](https://download.docker.com/linux/ubuntu/dists/bionic/pool/stable/amd64/)
+
+## 创建docker用户组，应用用户加入docker组
+
+```bash
+sudo groupadd docker
+
+ sudo usermod -aG docker ${USER}
+
+ sudo systemctl restart docker 
+```
 
