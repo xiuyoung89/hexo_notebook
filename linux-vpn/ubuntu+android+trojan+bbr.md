@@ -15,6 +15,7 @@ Codename:	bionic
 ## 安装 Trojan
 
 > [github地址](https://github.com/trojan-gfw/trojan)
+> 参考 地址 
 
 根据README文档，选择快速安装
 
