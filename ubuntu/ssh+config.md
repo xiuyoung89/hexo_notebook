@@ -1,3 +1,8 @@
+<!--
+ * @title: Do not edit
+ * @date: YYYY-MM-DD HH:mm:ss
+ * @author: Young
+--> 
 # SSH Config 管理
 
 ## 配置文件
@@ -25,6 +30,6 @@ Host nervusness
     HostName 67.218.141.175
     Port 28929
     User root
-    ProxyCommand nc -X 5 -x 127.0.0.1:1080 %h %p
+    ProxyCommand nc -X 5 -x 127.0.0.1:1081 %h %p
 ```
 
